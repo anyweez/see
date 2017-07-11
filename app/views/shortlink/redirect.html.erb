@@ -1,0 +1,17 @@
+<header>
+    <h2>
+        <span>Create shortlink:</span> 
+        <span class="shortlink"><%= @target %></span>
+    </h2>
+</header>
+<main>
+    <%= form_for(@link, url: { action: 'create' }) do |f| %>
+        <%= f.label(:name, 'Shortlink name') %>
+        <%= f.text_field(:name, value: @target, disabled: true) %>
+
+        <%= f.label(:url, 'URL') %>
+        <%= f.text_field(:url) %>
+
+        <%= f.submit('Create') %>
+    <% end %>
+</main>
