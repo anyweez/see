@@ -7,7 +7,7 @@
 <main>
     <%= form_for(@link, url: { action: 'create' }) do |f| %>
         <%= f.label(:name, 'Shortlink name') %>
-        <%= f.text_field(:name, value: @target, disabled: true) %>
+        <%= f.text_field(:name, value: @target) %>
 
         <%= f.label(:url, 'URL') %>
         <%= f.text_field(:url) %>
