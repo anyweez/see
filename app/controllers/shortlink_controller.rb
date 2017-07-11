@@ -41,7 +41,7 @@ class ShortlinkController < ApplicationController
     #
     # List all shortlinks and allow users to do some basic managerial stuff (deleting links, for example).
     def manage
-        @links = Shortlink.all
+        @links = Shortlink.all.order(created_at: :desc)
     end
 
     # GET /_/stahp

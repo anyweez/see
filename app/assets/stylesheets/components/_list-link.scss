@@ -1,0 +1,27 @@
+ol.list-link {
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+
+    li {
+        margin: 0 1% 22px 0;
+        padding: 4px 8px;
+        width: 23%;
+        box-sizing: border-box;
+
+        color: $color-background-primary;
+
+
+        background-color: $color-background-secondary;
+        // Subtitle text
+        .sub {
+            
+        }
+
+        h3 {
+            font-family: monospace;
+            margin: 10px 0;
+            font-size: 1.4em;
+        }
+    }
+}

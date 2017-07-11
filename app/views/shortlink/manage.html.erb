@@ -2,11 +2,11 @@
     <h2><pre>c/</pre></h2>
 </header>
 <main>
-    <ol>
+    <ol class="list-link">
         <% @links.each do |l| %>
             <li>
                 <h3><%= link_to(l.name, l.url) %></h3>
-                <p>created <%= distance_of_time_in_words(l.created_at, Time.now) %> ago</p>
+                <p class="sub">created <%= distance_of_time_in_words(l.created_at, Time.now) %> ago</p>
                 <p><%= link_to('delete', delete_path(l.name)) %></p>
             </li>
         <% end %>

@@ -1,0 +1,28 @@
+// TODO: pick font
+body {
+    background-color: $color-background-primary;
+    color: $color-font-primary;
+
+    font-family: 'News Cycle', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $color-link-primary;
+
+    &:visited {
+        color: $color-link-primary;
+    }
+
+    &:hover {
+        color: $color-background-highlight;
+    }
+}
+
+h3 {
+    margin: 0 0 8px 0;
+}
+
+p {
+    margin: 4px 0;
+}
