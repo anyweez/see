@@ -1,12 +1,14 @@
 label {
     display: block;
+    margin-top: 10px;
 }
 
 input[type=text] {
     width: 60%;
     box-sizing: border-box;
+    border: 1px solid $color-font-primary;
 
-    padding: 2px 5px;
+    padding: 8px 10px;
 
     font-size: 1.1em;
     font-family: 'News Cycle', sans-serif;
@@ -19,6 +21,6 @@ input[type=submit] {
     background-color: $color-background-highlight;
     font-size: 1.1em;
 
-    margin-top: 5px;
+    margin-top: 10px;
     font-family: 'News Cycle', sans-serif;
 }
